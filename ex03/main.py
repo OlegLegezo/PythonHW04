@@ -8,6 +8,8 @@ with open(path, 'r') as f:
     text = f.readline()
 
 # метод для конвертации в инт из строку
+
+
 def convert_to_int(str):
     return [int(x) for x in str.split()]
 
@@ -16,11 +18,12 @@ int_list = convert_to_int(text)
 print(int_list)
 
 
-newArr=[]
+newArr = []
 for el in int_list:
     if int_list.count(el) == 1:
         newArr.append(el)
 print(f'неповторяющиеся элементы: {newArr}')
+
 
 # мысли вслух:
 # тут задумывал сделать список повторных элементов
@@ -35,11 +38,7 @@ print(f'неповторяющиеся элементы: {newArr}')
 #             break
 
 
-
 # print(arrTemp)
-
-
-
 
 
 # a={1, 2, 7, 1, 6, 7, 8, 1}
